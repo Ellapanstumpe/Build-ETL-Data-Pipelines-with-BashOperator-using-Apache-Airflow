@@ -3,7 +3,6 @@
 Project Scenario    
 
 
-
 You are a data engineer at a data analytics consulting company. You have been assigned a project to decongest the national highways by analyzing the road traffic data from different toll plazas. Each highway is operated by a different toll operator with a different IT setup that uses different file formats. Your job is to collect data available in different formats and consolidate it into a single file.
 
 Objectives    
@@ -124,7 +123,11 @@ Fourth task	        extract_data_from_fixed_width
 Fifth task	        consolidate_data
 Sixth task	        transform_data
 
-Take a screenshot of the task pipeline section of the DAG. Name the screenshot task_pipeline.jpg.
+View the tasks of the DAG on Terminal:
+
+airflow tasks list ETL_toll_data
+
+
 
 At the end of this exercise, you should have the following screenshots with .jpg or .png extension:
 
@@ -136,16 +139,20 @@ consolidate_data.jpg
 transform.jpg
 task_pipeline.jpg
 
+
 Exercise 4: Getting the DAG operational
+
 
 Submit the DAG. Use CLI or Web UI to show that the DAG has been properly submitted.
 
 Note: If you don't find your DAG in the list, you can check for errors using the following command in the terminal:
 airflow dags list-import-errors
 
-Unpause and trigger the DAG through CLI or Web UI.
+Unpause and trigger the DAG through CLI or Web UI: 
 
-airflow dags unpause ETL_toll_data
+
+airflow dags unpause ETL_toll_data 
+
 airflow dags trigger ETL_toll_data
 
 
