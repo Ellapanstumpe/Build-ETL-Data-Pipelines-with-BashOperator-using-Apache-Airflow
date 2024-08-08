@@ -1,9 +1,15 @@
 # Build-ETL-Data-Pipelines-with-BashOperator-using-Apache-Airflow
 
-Project Scenario
+Project Scenario    
+
+
+
 You are a data engineer at a data analytics consulting company. You have been assigned a project to decongest the national highways by analyzing the road traffic data from different toll plazas. Each highway is operated by a different toll operator with a different IT setup that uses different file formats. Your job is to collect data available in different formats and consolidate it into a single file.
 
-Objectives
+Objectives    
+
+
+
 In this assignment, you will develop an Apache Airflow DAG that will:
 
 Extract data from a csv file
@@ -21,13 +27,16 @@ Open a terminal and create a directory structure for the staging area as follows
 /home/project/airflow/dags/finalassignment/staging.
 1 sudo mkdir -p /home/project/airflow/dags/finalassignment/staging
 
-Execute the following commands to give appropriate permission to the directories.
+Execute the following commands to give appropriate permission to the directories.  
+
 1 sudo chmod -R 777 /home/project/airflow/dags/finalassignment
 
-Download the data set from the source to the following destination using the curl command.
+Download the data set from the source to the following destination using the curl command.   
+
 1 sudo curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz -o /home/project/airflow/dags/finalassignment/tolldata.tgz
 
-Exercise 2: Create imports, DAG argument, and definition
+Exercise 2: Create imports, DAG argument, and definition  
+
 Please use BashOperator for all the tasks in this assignment.
 Create a new file named ETL_toll_data.py in /home/project directory and open it in the file editor.
 
